@@ -1,0 +1,55 @@
+﻿<Window xmlns:my="clr-namespace:Microsoft.Surface.Presentation.Controls;assembly=Microsoft.Surface.Presentation"  x:Class="Brooks.ennuiWare.CopyBreak.Windows.StartScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StartScreen" Height="510" Width="700" >
+    <Grid Height="572">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="287*"></ColumnDefinition>
+            <ColumnDefinition Width="391*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="47*"></RowDefinition>
+            <RowDefinition Height="66*"></RowDefinition>
+            <RowDefinition Height="50*"></RowDefinition>
+            <RowDefinition Height="75*"></RowDefinition>
+            <RowDefinition Height="234*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Image Source="/CopyBreak;component/Images/CopyBreakPurpleLogo.png" Margin="10,0,9,6" HorizontalAlignment="Left"></Image>
+        <Image Source="/CopyBreak;component/Images/ennuiWarelogoTransSMALL.gif" Grid.Column="1" HorizontalAlignment="Right" Margin="0,41,6,100" Grid.Row="5"></Image>
+        <TextBlock Grid.Column="1" Margin="182,119,98,94" Grid.Row="5">ennuiWare (c) 2010</TextBlock>
+        <Label Grid.Row="1" FontSize="24" FontWeight="Bold" Padding="10, 0, 0, 0">Welcome to CopyBreak!</Label>
+        
+        <Label FontSize="24" Padding="10, 0, 0, 0" HorizontalAlignment="Center" Width="269" Grid.Column="1" Margin="58,33,64,30" Content="CopyBreak Hall of Fame">
+                </Label>
+        <my:SurfaceButton x:Name="StartButton" Grid.Row="5" Margin="201,18,9,166" Click="StartButton_Click" IsDefault="True">
+        <Image Source="/CopyBreak;component/Images/StartArrow.gif"  Grid.Row="5" HorizontalAlignment="Left" Width="56">
+        </Image>
+        </my:SurfaceButton>
+        <Label Grid.Row="3" FontSize="24" FontWeight="Bold" HorizontalAlignment="Left" Margin="10,7,0,0" Padding="1, 0, 0, 0" Width="194">Choose a Deck</Label>
+        <my:SurfaceButton Grid.Row="4" Margin="324,95,48,134"></my:SurfaceButton>
+        
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="4">
+             <my:SurfaceButton Grid.Row="3" Width="60" x:Name="BlueDeck" Background="Transparent" Margin="30,0,10,0" Click="BlueDeck_Click">
+                 <Image Source="/CopyBreak;component/Images/CopyBreak Blue B.gif" Width="33" Height="51"  Margin="0"></Image>
+             </my:SurfaceButton>
+            <my:SurfaceButton Grid.Row="3" Width="60" x:Name="RedDeck" Background="Transparent" Margin="0,0,10,0" Click="RedDeck_Click">
+                <Image Source="/CopyBreak;component/Images/CopyBreak Red B.gif" Height="51" Width="33"></Image>
+            </my:SurfaceButton>
+            <my:SurfaceButton Grid.Row="3" Width="60" x:Name="CartoonDeck" Background="Transparent" Click="CartoonDeck_Click">
+                <Image Source="/CopyBreak;component/Images/CopyBreak BLUE B Cartoon Test.gif" Height="51" Width="33"></Image>
+            </my:SurfaceButton>
+        </StackPanel>
+        
+        <StackPanel Grid.Column="1" Grid.Row="1" Grid.RowSpan="4" Margin="102,21,99,16" x:Name="top10StackPanel"></StackPanel>
+        <Image Source="/CopyBreak;component/Images/Top10Box.png" Grid.Column="1" Grid.RowSpan="4" Grid.Row="1"></Image>
+        <StackPanel Grid.Column="0" Grid.Row="2" Orientation="Horizontal">
+            <Label Height="50" FontSize="16" Margin="5,0,0,0">Name</Label>
+            <TextBox FontSize="18" x:Name="PlayerNameTextBox" Grid.Row="2" Margin="12,0,34,19" VerticalAlignment="Center" Width="214"></TextBox>
+            
+        </StackPanel> 
+ 
+        
+    </Grid>
+</Window> 

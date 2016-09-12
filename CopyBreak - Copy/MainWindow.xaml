@@ -1,0 +1,55 @@
+﻿<Window xmlns:my="clr-namespace:Microsoft.Surface.Presentation.Controls;assembly=Microsoft.Surface.Presentation"  x:Class="Brooks.ennuiWare.CopyBreak.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ennuiWare: CopyBreak" Height="650" Width="925">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="82*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+            <ColumnDefinition Width="90*" />
+
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="10" TextAlignment="Center" Grid.Column="3" Margin="29,13,28,15" Grid.Row="1"><Bold>No<LineBreak />Move</Bold></TextBlock>
+        <my:SurfaceButton FontSize="9" FontWeight="Bold" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Margin="10,8,10,11" Height="39"  Width="70" ToolTip="Click when there are no more moves to make" />
+        <my:SurfaceButton Grid.Row="1" Height="39" Width="70"  HorizontalAlignment="Center" Margin="10,8,10,11" Name="surfaceButton1" VerticalAlignment="Center" Grid.Column="1">
+            <TextBlock TextAlignment="Center"><Bold>New<LineBreak/>Game</Bold></TextBlock>
+        </my:SurfaceButton>
+        
+        <my:SurfaceButton Content="Options" FontSize="10" FontWeight="Bold" Grid.Column="2" Grid.Row="1" Height="39" Width="70" HorizontalAlignment="Center" Margin="10,8,10,11" Name="surfaceButton2" VerticalAlignment="Center" />
+        <my:SurfaceButton Content="Save" FontWeight="Bold" Grid.Column="7" Grid.Row="1" Height="39" Width="70" HorizontalAlignment="Center" Margin="10,8,10,11" Name="surfaceButton3" VerticalAlignment="Center"  />
+        <my:SurfaceButton Content="Quit" FontWeight="Bold" Grid.Column="8" Height="39" Width="70" HorizontalAlignment="Center" Margin="10,8,10,11" Name="surfaceButton4" VerticalAlignment="Center" Click="surfaceButton4_Click" Grid.Row="1" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\ennuiWarelogoTrans.gif" Grid.ColumnSpan="3" Margin="8,0,0,21" Grid.RowSpan="3" Grid.Column="4" ImageFailed="Image_ImageFailed" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE w.bmp" Grid.ColumnSpan="2" Margin="0,57,7,50" Grid.RowSpan="4" Grid.Column="3" Grid.Row="2" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE Ncartoon.bmp" Grid.ColumnSpan="2" Margin="0,57,7,50" Grid.RowSpan="4" Grid.Row="2" ClipToBounds="False" Grid.Column="1" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE Ecartoon.bmp" Grid.ColumnSpan="3" Margin="90,0,7,50" Grid.RowSpan="3" Grid.Column="1" Grid.Row="3" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE G.bmp" Grid.ColumnSpan="3" Margin="0,0,0,50" Grid.RowSpan="3" Grid.Column="4" Grid.Row="3" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE A.bmp" Grid.ColumnSpan="4" Margin="90,0,1,50" Grid.RowSpan="3" Grid.Column="4" Grid.Row="3" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE M.bmp" Grid.ColumnSpan="2" Margin="0,56,3,52" Grid.RowSpan="4" Grid.Column="7" Grid.Row="2" />
+        <Image Source="C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE Ecartoon.bmp" Grid.ColumnSpan="2" Margin="0,56,2,50" Grid.RowSpan="4" Grid.Column="8" Grid.Row="2" />
+        <Image Source=" C:\Users\Clifford\Documents\Visual Studio 2010\Projects\CopyBreak\CopyBreak\Images\CopyBreak BLUE Back.bmp" Grid.ColumnSpan="2" Grid.RowSpan="3" Grid.Column="9" Grid.Row="8" Margin="26,37,-35,12" />
+        <my:SurfaceButton Content="Help" FontWeight="Bold" Grid.Column="9" Grid.Row="1" Height="39" HorizontalAlignment="Left" Margin="10,8,10,11" Name="surfaceButton5" VerticalAlignment="Top" Width=" 70"  />
+    </Grid>
+
+</Window>

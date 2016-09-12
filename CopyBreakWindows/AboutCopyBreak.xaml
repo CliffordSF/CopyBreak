@@ -1,0 +1,21 @@
+﻿<Window x:Class="Brooks.ennuiWare.CopyBreak.Windows.AboutCopyBreak"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About CopyBreak" Height="450" Width="300">
+    <Grid>
+        <StackPanel>
+            <Image Source="/CopyBreak;component/Images/CopyBreakPurpleLogo.png" Height="29" Width="201">
+                
+            </Image>
+        
+            <TextBlock>CopyBreak version .09<LineBreak></LineBreak>Copyright 2010, ennuiWare<LineBreak></LineBreak><LineBreak></LineBreak>
+            CopyBreak is unsupported freeware brought to you<LineBreak></LineBreak>by Clifford Brooks. CopyBreak may be freely<LineBreak></LineBreak>distributed as long as all files are included and <LineBreak></LineBreak>unchanged. CopyBreak may not be included as part<LineBreak></LineBreak>of a commercial compilation or distributed on pay-<LineBreak></LineBreak>for-access sites
+            .<LineBreak></LineBreak><LineBreak></LineBreak>CopyBreak is offered on an as-is basis. Clifford<LineBreak></LineBreak>Brooks takes no responsiblity for data loss or<LineBreak></LineBreak>
+            problems attributable to your use of CopyBreak.<LineBreak></LineBreak>
+            <LineBreak></LineBreak>CopyBreak was written by Clifford Brooks, an<LineBreak></LineBreak>information architect who can help you with your<LineBreak></LineBreak>writing projects, large or small.<LineBreak></LineBreak><LineBreak></LineBreak>
+            Call: 408-204-5272<LineBreak></LineBreak>Email: writer@cliffbrooks.com<LineBreak></LineBreak>Visit: http://ennuiware.wordpress.com
+                <LineBreak></LineBreak><LineBreak></LineBreak><Bold>CopyBreak was created entirely on a Tablet PC.</Bold></TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>
