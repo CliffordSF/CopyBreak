@@ -17,7 +17,7 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         public Deck()
         {
             random = new Random();
-            foreach (Letter letter in Constants.CardDistribution.Keys) // Selected each letter key in the CardDistribution dictionary
+            foreach (Letter letter in Constants.CardDistribution.Keys) // Select each letter key in the CardDistribution dictionary
             {
                 int letterFrequency = Constants.CardDistribution[letter]; //Using the key, it returns the letter frequency
                 for (int i = 0; i < letterFrequency; i++)
