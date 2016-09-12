@@ -22,9 +22,13 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// <param name="filename">Constant reference to high score file</param>
         public static void SaveGame(Game game, string filename)
         {
+#pragma warning disable CS1503 // Argument 1: cannot convert from 'string' to 'System.IO.Stream'
             using (XmlWriter writer = XmlWriter.Create(filename)) // Create an XmlWriter file to store game state data as XML
+#pragma warning restore CS1503 // Argument 1: cannot convert from 'string' to 'System.IO.Stream'
             {
+#pragma warning disable CS0103 // The name 'GameSerializer' does not exist in the current context
                 GameSerializer.WriteObject(writer, game); // Serialize game data
+#pragma warning restore CS0103 // The name 'GameSerializer' does not exist in the current context
             }
         }
         /// <summary>
@@ -36,7 +40,9 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         {
             using (XmlReader reader = XmlReader.Create(filename))
             {
+#pragma warning disable CS0103 // The name 'GameSerializer' does not exist in the current context
                 Game game = (Game) GameSerializer.ReadObject(reader);
+#pragma warning restore CS0103 // The name 'GameSerializer' does not exist in the current context
                 game.ReloadDictionary();
                 return game;
             }
@@ -47,9 +53,13 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// <param name="highScore">Score to be written to disk</param>
         public static void SaveHighscore(HighScore highScore)
         {
+#pragma warning disable CS1503 // Argument 1: cannot convert from 'string' to 'System.IO.Stream'
             using (XmlWriter writer = XmlWriter.Create(HighscoreFilename)) // Create an XmlWriter file to store game state data as XML
+#pragma warning restore CS1503 // Argument 1: cannot convert from 'string' to 'System.IO.Stream'
             {
+#pragma warning disable CS0103 // The name 'HighScoreSerializer' does not exist in the current context
                 HighScoreSerializer.WriteObject(writer, highScore); // Serialize high score
+#pragma warning restore CS0103 // The name 'HighScoreSerializer' does not exist in the current context
             }
         }
     }

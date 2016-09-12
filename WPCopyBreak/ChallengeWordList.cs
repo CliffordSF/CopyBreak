@@ -22,7 +22,9 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// </summary>
         public ChallengeWords()
         {
+#pragma warning disable CS0117 // 'File' does not contain a definition for 'ReadAllLines'
             challengeWordQueue = new Queue<string>(File.ReadAllLines(ChallengeFileName, Encoding.UTF8));
+#pragma warning restore CS0117 // 'File' does not contain a definition for 'ReadAllLines'
         }
 
         /// <summary>
@@ -41,7 +43,9 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// </summary>
         public void Save()
         {
+#pragma warning disable CS0117 // 'File' does not contain a definition for 'WriteAllLines'
             File.WriteAllLines(ChallengeFileName, challengeWordQueue, Encoding.UTF8);
+#pragma warning restore CS0117 // 'File' does not contain a definition for 'WriteAllLines'
         }
         
     }

@@ -17,7 +17,9 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// <param name="path"> Path of file to open</param>
         public WordDictionary(String path)
         {
+#pragma warning disable CS0117 // 'File' does not contain a definition for 'ReadAllLines'
             allLines = File.ReadAllLines(path, Encoding.UTF8);
+#pragma warning restore CS0117 // 'File' does not contain a definition for 'ReadAllLines'
             for (int i = 0; i < allLines.Length; i++)
             {
                allLines[i] = allLines[i].ToUpper(); // Make terms uppercase

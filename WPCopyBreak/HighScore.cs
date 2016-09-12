@@ -24,7 +24,11 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         /// </summary>
         public HighScore(FinalScore finalScore)
         {
+#pragma warning disable CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
             BinaryFormatter formatter = new BinaryFormatter(); //Create binary formatter
+#pragma warning restore CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning restore CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
             highScoreList = new List<FinalScore>();
             
             if (File.Exists(highScoreFileName))
@@ -71,7 +75,11 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         }
         public void SaveHighScoreList(HighScore highScores)
         {
+#pragma warning disable CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning disable CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
             BinaryFormatter formatter = new BinaryFormatter();
+#pragma warning restore CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
+#pragma warning restore CS0246 // The type or namespace name 'BinaryFormatter' could not be found (are you missing a using directive or an assembly reference?)
 
             if (File.Exists(highScoreFileName))
             {
