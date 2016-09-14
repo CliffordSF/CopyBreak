@@ -66,7 +66,7 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
             {
                 AddToHighScoreList(currentGameFinalScore);
             }
-            int highestScore = (int) highScoreList[highScoreList.Count - 1].GameScore;
+            int highestScore = highScoreList[highScoreList.Count - 1].GameScore;
             return highestScore; 
         }
         public void SaveHighScoreList(HighScore highScores)

@@ -48,12 +48,12 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
             //Begin section added for transparent window...calls ExtendGlassFrame function from GlassHelper class
         }
 
-        protected override void OnSourceInitialized(EventArgs e)
-        {
-            base.OnSourceInitialized(e);
-            // This can't be done any earlier than the SourceInitialized event:
-            GlassHelper.ExtendGlassFrame(this, new Thickness(-1));
-        }
+        //protected override void OnSourceInitialized(EventArgs e)
+        //{
+        //    base.OnSourceInitialized(e);
+        //    // This can't be done any earlier than the SourceInitialized event:
+        //    GlassHelper.ExtendGlassFrame(this, new Thickness(-1));
+        //}
 
         private void quitButton_Click(object sender, RoutedEventArgs e)
         {
