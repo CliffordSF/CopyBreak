@@ -30,10 +30,7 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
             InitializeComponent();
             highScores = new HighScore(finalscore);
             DisplayTopTen();
-            PlayerNameTextBox.Focus();
-
-            
-
+            PlayerNameTextBox.Focus();   
             
         }
 
