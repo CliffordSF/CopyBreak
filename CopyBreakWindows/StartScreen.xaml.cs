@@ -37,7 +37,7 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
             var newWindow = new MainWindow(); //Create an instance of MainWindow
-            //newWindow.Owner = this;
+            newWindow.Owner = this;
             MainWindow.InputName = PlayerNameTextBox.Text;
             MainWindow.cardColor = SelectedColor;
 

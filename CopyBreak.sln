@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Blend for Visual Studio 14
+# Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{771AF24A-2662-4EDE-9D58-B1C9FC024D58}"
@@ -10,6 +10,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyBreakTerminal", "CopyBreakConsole\CopyBreakTerminal.csproj", "{EA655AD0-0687-4CEE-B64C-2AA476CDC47D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyBreakWindows", "CopyBreakWindows\CopyBreakWindows.csproj", "{D16FFC32-A307-4B85-914D-27048E078F8B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA655AD0-0687-4CEE-B64C-2AA476CDC47D} = {EA655AD0-0687-4CEE-B64C-2AA476CDC47D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
