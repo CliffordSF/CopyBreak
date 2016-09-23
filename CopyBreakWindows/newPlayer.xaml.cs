@@ -24,8 +24,7 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
         {
             InitializeComponent();
             userNameTextBox.Focus();
-        }//This is a test of github desktop.
-
+        }
         private void userInputOk_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
