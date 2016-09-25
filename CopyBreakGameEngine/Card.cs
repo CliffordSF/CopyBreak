@@ -37,6 +37,6 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         public Card()
         {
             
-        }
+        }//end of file
     }
 }
