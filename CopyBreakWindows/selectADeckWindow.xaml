@@ -17,15 +17,15 @@
         </Grid.ColumnDefinitions>
         <Label FontSize="16" FontWeight="Bold" Margin="12,12,33,312" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left">Select a deck</Label>
         
-        <my:SurfaceButton Content="OK" Height="23" Grid.Row="2" HorizontalAlignment="Right" x:Name="selectDeckOK" VerticalAlignment="Center" Width="75" Click="selectDeckOK_Click" />
-        <my:SurfaceButton Content="Cancel" Height="23" Grid.Row="2" Grid.Column="2" x:Name="cancelButton" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Click="cancelButton_Click" />
+        <Button Content="OK" Height="23" Grid.Row="2" HorizontalAlignment="Right" x:Name="selectDeckOK" VerticalAlignment="Center" Width="75" Click="selectDeckOK_Click" />
+        <Button Content="Cancel" Height="23" Grid.Row="2" Grid.Column="2" x:Name="cancelButton" HorizontalAlignment="Left" VerticalAlignment="Center" Width="75" Click="cancelButton_Click" />
         <Image Source="/CopyBreak;component/Images/CopyBreak RED B.gif" Grid.Row="1" Grid.Column="1" Width="60"/>
         <Image Source="/CopyBreak;component/Images/CopyBreak BLUE B Cartoon Test.gif" Grid.Row="1" Grid.Column="2" Width="60"/>
         <Label Content="Select a deck" Height="28" FontSize="14" FontWeight="Bold" HorizontalAlignment="Left" Margin="12,14,0,0" Name="label1" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="198" />
         <Image Source="/CopyBreak;component/Images/CopyBreak Blue B.gif" Grid.Row="1" Margin="12,8,11,9"></Image>
-        <my:SurfaceButton Grid.Row="1" Width="60" x:Name="BlueDeck" Background="Transparent" Margin="10,8,10,9" Click="BlueDeck_Click"></my:SurfaceButton>
-        <my:SurfaceButton Grid.Row="1" Grid.Column="1" Width="60" x:Name="RedDeck" Background="Transparent" Margin="10,8,10,9" Click="RedDeck_Click"></my:SurfaceButton>
-        <my:SurfaceButton Grid.Row="1" Grid.Column="2" Width="60" x:Name="CartoonDeck" Background="Transparent" Margin="10,8,10,9" Click="CartoonDeck_Click"></my:SurfaceButton>
+        <Button Grid.Row="1" Width="60" x:Name="BlueDeck" Background="Transparent" Margin="10,8,10,9" Click="BlueDeck_Click"></Button>
+        <Button Grid.Row="1" Grid.Column="1" Width="60" x:Name="RedDeck" Background="Transparent" Margin="10,8,10,9" Click="RedDeck_Click"></Button>
+        <Button Grid.Row="1" Grid.Column="2" Width="60" x:Name="CartoonDeck" Background="Transparent" Margin="10,8,10,9" Click="CartoonDeck_Click"></Button>
     </Grid>
 </Window>
     
