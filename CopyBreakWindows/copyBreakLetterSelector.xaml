@@ -7,6 +7,6 @@
         <Label Margin="10,10,59,97">Type a letter for the CopyBreak card.</Label>
         <TextBox Height="23" HorizontalAlignment="Left" Margin="225,12,0,0" Name="textBoxLetterSelected" VerticalAlignment="Top" Width="24" AcceptsTab="True" AcceptsReturn="True" TextChanged="textBoxLetterSelected_TextChanged" TabIndex="2147483647" />
         <Image Source="/CopyBreak;component/Images/ennuiWarelogoTransSMALL.gif" Margin="-32,48,122,0"></Image>
-        <my:SurfaceButton Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="174,97,0,0" Name="cancelButton" VerticalAlignment="Top" Width="75" Click="cancelButton_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="174,97,0,0" Name="cancelButton" VerticalAlignment="Top" Width="75" Click="cancelButton_Click" />
     </Grid>
 </Window>

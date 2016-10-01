@@ -65,52 +65,52 @@
             </ScrollViewer>
             <Image Source="/CopyBreak;component/Images/ennuiWarelogoTransSMALL.gif" Grid.Row="2" HorizontalAlignment="Left" Width="75" Margin="0,22,0,0"></Image>
         <StackPanel Orientation="Vertical" Grid.Row="1">
-            <my:SurfaceButton x:Name="TurnButton" ToolTip="End your turn and work on a new word" Margin="0, 20, 0, 0" Background="Yellow" FontWeight="Bold" Height="39" Width="70" HorizontalAlignment="Center" Click="TurnButton_Click" Grid.Column="0" Grid.Row="1">
+            <Button x:Name="TurnButton" ToolTip="End your turn and work on a new word" Margin="0, 20, 0, 0" Background="Yellow" FontWeight="Bold" Height="39" Width="70" HorizontalAlignment="Center" Click="TurnButton_Click" Grid.Column="0" Grid.Row="1">
                 <TextBlock TextAlignment="Center"><Bold>End<LineBreak />Turn</Bold></TextBlock>
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
                
-            </my:SurfaceButton>
-            <my:SurfaceButton Margin="0, 10" ToolTip="Begin a new game" Height="39" Width="70" Background="white" x:Name="newGameButton" Click="newGameButton_Click">
+            </Button>
+            <Button Margin="0, 10" ToolTip="Begin a new game" Height="39" Width="70" Background="white" x:Name="newGameButton" Click="newGameButton_Click">
                 <TextBlock TextAlignment="Center"><Bold>New<LineBreak />Game</Bold></TextBlock>
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Content="Save" ToolTip="Save a game in progress" Background="white" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="saveButton" Click="saveButton_Click">
+            </Button>
+            <Button Content="Save" ToolTip="Save a game in progress" Background="white" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="saveButton" Click="saveButton_Click">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Content="Quit" ToolTip="End game" Background="white" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="quitButton" Click="quitButton_Click">
+            </Button>
+            <Button Content="Quit" ToolTip="End game" Background="white" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="quitButton" Click="quitButton_Click">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Content="Options" Background="white" ToolTip="Select a deck" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="optionsButton" Click="optionsButton_Click">
+            </Button>
+            <Button Content="Options" Background="white" ToolTip="Select a deck" FontWeight="Bold" Height="39" Width="70" Margin="0,8,0,11" Padding="0" Name="optionsButton" Click="optionsButton_Click">
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Background="White" FontWeight="Bold" ToolTip="Load a saved game." Height="39" Margin="0,0,0,0" Padding="0" Name="loadButton" Width="70" Click="loadButton_Click">
+            </Button>
+            <Button Background="White" FontWeight="Bold" ToolTip="Load a saved game." Height="39" Margin="0,0,0,0" Padding="0" Name="loadButton" Width="70" Click="loadButton_Click">
                 <TextBlock TextAlignment="Right"><Bold>Load<LineBreak />Game</Bold></TextBlock>
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Background="Red" FontWeight="Bold" ToolTip="End the current game." Height="39" Margin="0,8,0,11" Padding="0" Name="endButton" Width="70" Click="endButton_Click">
+            </Button>
+            <Button Background="Red" FontWeight="Bold" ToolTip="End the current game." Height="39" Margin="0,8,0,11" Padding="0" Name="endButton" Width="70" Click="endButton_Click">
                 <TextBlock TextAlignment="Center"><Bold>End<LineBreak />Game</Bold></TextBlock>
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
-            <my:SurfaceButton Background="Yellow" FontWeight="Bold" ToolTip="About CopyBreak" Height="39" Margin="0,8,0,11" Padding="0" Name="aboutButton" Width="70" Click="aboutButton_Click">
+            </Button>
+            <Button Background="Yellow" FontWeight="Bold" ToolTip="About CopyBreak" Height="39" Margin="0,8,0,11" Padding="0" Name="aboutButton" Width="70" Click="aboutButton_Click">
                 <TextBlock TextAlignment="Center"><Bold>About</Bold></TextBlock>
                 <Button.BitmapEffect>
                     <DropShadowBitmapEffect Color="Black" Direction="220" ShadowDepth="1" Softness="1" Opacity="0.5" />
                 </Button.BitmapEffect>
-            </my:SurfaceButton>
+            </Button>
         </StackPanel>
         <TextBlock Grid.Column="2" Grid.Row="2" Margin="0,10,0,0"><Bold> Card Distribution</Bold><LineBreak></LineBreak>A=4  B=1  C=2  D=2  E=5  F=1  G=1  H=1  I=4  J=1<LineBreak></LineBreak>K=1  L=2  M=1  N=3  O=4  P=2  Q=1  R=3  S=2  T=3<LineBreak></LineBreak>U=1  V=1  W=1  X=1  Y=1  Z=1
         </TextBlock>
