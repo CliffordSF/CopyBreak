@@ -1,7 +1,6 @@
-﻿<Window xmlns:my="clr-namespace:Microsoft.Surface.Presentation.Controls;assembly=Microsoft.Surface.Presentation"  
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         x:Class="Brooks.ennuiWare.CopyBreak.Windows"
         Icon="/CopyBreak;component/Images/CopyBreak.ico"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="BlanchedAlmond"
         Title="ennuiWare: CopyBreak" Height="625" Width="900" MinWidth="900" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" Closed="Window_Closed">
 

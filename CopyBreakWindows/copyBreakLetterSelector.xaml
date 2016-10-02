@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Brooks.ennuiWare.CopyBreak.Windows.copyBreakLetterSelector"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Choose a Letter" Height="194" Width="300" xmlns:my="http://schemas.microsoft.com/surface/2008" ResizeMode="NoResize">
+        Title="Choose a Letter" Height="194" Width="300" ResizeMode="NoResize">
     <Grid Height="139">
         
         <Label Margin="10,10,59,97">Type a letter for the CopyBreak card.</Label>
