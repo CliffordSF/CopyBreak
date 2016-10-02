@@ -6,6 +6,7 @@ using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using Brooks.ennuiWare.CopyBreak.Engine;
 
+
 namespace Brooks.ennuiWare.CopyBreak.Windows
 {
     /// <summary>
@@ -476,7 +477,7 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
 
         static void PlaySound(string strWavName)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(strWavName);
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer("C:/Users/cliff/Documents/GitHub/CopyBreak/CopyBreakWindows/Sounds/shuffle_cards.wav");
             player.Play();
         }
 

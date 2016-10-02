@@ -41,7 +41,7 @@ namespace Brooks.ennuiWare.CopyBreak.Windows
             MainWindow.InputName = PlayerNameTextBox.Text;
             MainWindow.cardColor = SelectedColor;
 
-            this.Close();
+            //this.Close();
             newWindow.ShowDialog();
            
          }

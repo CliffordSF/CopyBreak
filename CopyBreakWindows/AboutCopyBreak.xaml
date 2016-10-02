@@ -1,5 +1,5 @@
-﻿<Window x:Class="Brooks.ennuiWare.CopyBreak.Windows.AboutCopyBreak"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+        x:Class="Brooks.ennuiWare.CopyBreak.Windows.AboutCopyBreak"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="About CopyBreak" Height="450" Width="300">
     <Grid>

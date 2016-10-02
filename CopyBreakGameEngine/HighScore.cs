@@ -64,7 +64,7 @@ namespace Brooks.ennuiWare.CopyBreak.Engine
         {
             if (highScoreList.Count == 0)
             {
-                AddToHighScoreList(currentGameFinalScore);
+               AddToHighScoreList(currentGameFinalScore);
             }
             int highestScore = highScoreList[highScoreList.Count - 1].GameScore;
             return highestScore; 
